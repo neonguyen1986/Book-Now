@@ -1,0 +1,211 @@
+.home-header-container {
+    position        : sticky;
+    top             : 0;
+    background-color: #3b414d;
+    z-index         : 200;
+    color           : white;
+
+    height: 4rem;
+    width : 100%;
+
+    .home-header-content {
+        width         : 100%;
+        height        : 100%;
+        display       : flex;
+        flex-direction: row;
+        padding       : 0 20px;
+
+        .left-content {
+            width          : 15%;
+            display        : flex;
+            align-items    : center;
+            justify-content: start;
+
+            .header-logo {
+                background-size: auto 70%;
+                width          : 80%;
+                cursor         : pointer;
+                border         : 2px solid #bfad6c;
+                border-radius  : 0.5rem;
+            }
+        }
+
+        .center-content {
+            width          : 70%;
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            align-items    : center;
+            padding-left   : 3rem;
+
+            .child-content {
+                display        : flex;
+                flex-direction : column;
+                justify-content: center;
+                align-items    : center;
+
+                .sub-title {
+                    font-size  : 12px;
+                    font-weight: 200;
+                }
+            }
+        }
+
+        .right-content {
+            width          : 15%;
+            display        : flex;
+            align-items    : center;
+            justify-content: end;
+            gap            : 0.2rem;
+
+            .fas.fa-language {
+                font-size: 1.5rem;
+            }
+
+            .language {
+                cursor      : pointer;
+                margin-right: 2rem;
+            }
+
+            .language-en {
+                cursor : pointer;
+                opacity: 0.3;
+
+                &.active {
+                    //class languague and class active
+                    color  : #e7746f;
+                    opacity: 1;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .language-fr {
+                cursor : pointer;
+                opacity: 0.3;
+
+                &.active {
+                    //class languague and class active
+                    color  : #e7746f;
+                    opacity: 1;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.home-header-banner {
+    // background         : url('../../../assets/bookingcare-cover-4.jpg') no-repeat;
+    //opacity: 0.8;//tạo một lớp màng trắng
+    height             : 35rem;
+    background-size    : cover;
+    background-position: center;
+    display            : flex;
+    flex-direction     : column;
+
+    .content-down {
+        padding-bottom: 6rem;
+        border-bottom : solid 2px #e5e5e5;
+        box-shadow    : inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+
+        .title1 {
+            text-align : center;
+            color      : #e7746f;
+            font-size  : 2.5rem;
+            text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+            font-family: 'Arvo';
+        }
+
+        .title2 {
+            text-align : center;
+            color      : #e7746f;
+            font-size  : 2.5rem;
+            font-weight: bold;
+            text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+            font-family: 'Arvo';
+        }
+
+        .condow-ads {
+            margin-top    : 2rem;
+            text-align    : center;
+            text-transform: uppercase;
+        }
+
+        .search {
+            background-color: #e7746f;
+            height          : 2.7rem;
+            width           : 33%;
+            margin          : 3.5rem auto 0 auto;
+            border-radius   : 0.5rem;
+            display         : flex;
+            align-items     : center;
+            flex-direction  : row;
+            justify-content : space-between;
+
+            .fas.fa-search {
+                font-size: 20px;
+                padding  : 20px;
+            }
+
+            // .search-box {
+            //     background-color: transparent;
+            //     border          : none;
+            //     outline         : none;
+            //     width           : 70%;
+            //     height          : 80%;
+            //     font-size       : 15px;
+            // }
+
+            .content-down-select-doctors {
+                width: 85%;
+            }
+        }
+    }
+
+    .content-up {
+        margin-top     : 4rem;
+        margin-bottom  : 6rem;
+        width          : 100%;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-around;
+        align-items    : start;
+
+
+        .icon-block {
+            cursor     : pointer;
+            display    : flex;
+            align-items: center;
+
+
+            .icon {
+
+                height         : 4rem;
+                width          : 4rem;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+
+                .img {
+                    height: 3rem;
+                    width : 3rem;
+                }
+            }
+
+            .text {
+                width         : 100%;
+                text-align    : center;
+                font-weight   : 600;
+                font-size     : 1rem;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+}
